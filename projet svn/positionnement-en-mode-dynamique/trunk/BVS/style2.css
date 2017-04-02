@@ -1,0 +1,139 @@
+body
+{
+	width: 100%; 
+	margin-top: 20px; /* Pour éviter de coller avec le haut de la fenêtre du navigateur. Essayez d'enlever pour voir ! */
+	margin-bottom: 20px;    /* Idem pour le bas du navigateur */
+	margin-right: 20px;
+	border-radius: 10px 10px 10px 10px;
+	background-color:#FFFFFF;
+	border-width: 3px;  epaisseur de la bordure du  body 
+	border-style: solid;
+	border-color:#242424;
+}
+
+#head{
+margin: 100%;
+height: 4px;
+width: 7px;
+color: blue;
+}
+
+
+#menu_horizontal, #menu_horizontal ul /* Liste  Accueil Calibration Carte de chaleur histogramme VERTICAL */     
+{
+	padding : 0; /* pas de marge intérieure */
+	margin : 0; /* ni extérieure */
+	list-style : none; /* on supprime le style par défaut de la liste */
+	line-height : 21px; /* on définit une HAutEUR pour chaque élément */
+	text-align : center; /* on centre le texte qui se trouve dans la liste */
+}
+
+#menu_horizontal /* Ensemble du menu */
+{
+	position:absolute;
+	font-weight : bold; /* on met le texte en gras */
+	font-family : Arial; /* on utilise Arial, c'est plus beau ^^ */
+	font-size : 14 px; /* hauteur du texte : 12 pixels */
+	margin-left:250px;
+	margin-top: 5px;
+	margin-bottom: 50px;
+	
+}
+
+#menu_horizontal a /* Contenu des listes */
+{
+	display : block; /* on change le type d'élément, les liens deviennent des balises de type block */
+	padding : 0; /* aucune marge intérieure */
+	background :-webkit-linear-gradient(rgba(22,127,193,0.79) 13.91%, #ffffff 100%); /* couleur de fond */        
+	color : #0000FF; /* couleur du texte */
+	text-decoration : none; /* on supprime le style par défaut des liens (la plupart du temps = souligné) */
+	width : 144px; /* largeur */
+}
+
+#menu_horizontal li /* Elements des listes */      
+{ 
+        float : left; 
+        /* pour IE qui ne reconnaît pas "transparent" */
+        border-right : 1px solid #fff; /* on met une bordure blanche à droite de chaque élément */
+}
+
+/* IE ne reconnaissant pas le sélecteur ">" */
+html>body #menu_horizontal li
+{
+        border-right: 1px solid transparent ; /* on met une bordure transparente à droite de chaque élément */
+}
+
+.lettre{
+	color:red;
+}
+
+.couleur{
+		margin-top: 30px;
+		border-color:black;
+		color: #cff2f2;
+		margin-left: 10px;
+		margin-right: 10px;
+		width:1350px;
+		background-color: #6300ff
+	}
+#corps
+{
+	width: 100%;
+	height:1000px;
+    text-align: justify;
+    font-size: 16px;
+    font-family: "Comic Sans MS";
+    text-shadow: 0px 0px;
+    margin-top:40px;
+    margin-left: 15px; /* Une marge à gauche pour pousser le corps, afin qu'il ne passe plus sous le menu */
+    margin-right:15px; 
+    margin-bottom: 40px; /* Ca c'est pour éviter que le corps colle trop au pied de page en-dessous */
+    color: #003430;
+	/* Une couleur de fond pour le corps */
+
+   }
+
+
+#SVGplan
+{
+width: 640px;
+height:480px;
+float: right;
+   margin-top:5px;
+   margin-left:5px; /* Une marge à gauche pour pousser le corps, afin qu'il ne passe plus sous le menu */
+   margin-right:5px; 
+   margin-bottom:5px; /* Ca c'est pour éviter que le corps colle trop au pied de page en-dessous */
+   padding:5px; /* Pour éviter que le texte à l'intérieur du corps ne colle trop à la bordure */
+	padding-right:5px;
+	padding-left:5px;
+   color: #003450;
+	/* Une couleur de fond pour le corps */
+	/* border: 1px solid #bfbfbf; /* Une bordure pour bien marquer les limites du corps et pour faire joli */
+
+}
+
+   
+#IMG1,#SVGplan
+ {
+display:inline;
+/*padding: 5px;*/
+width:50%;
+/*position: fixed;*/
+}
+
+#footer
+{
+	background-position: 1px;
+	text-align: center;
+	color: black;
+	border-radius:10px 10px 10px 10px;
+
+	width:2000px;
+   	clear: both;
+   	padding :5px;
+	border: 2px solid #7c7c7c;
+	margin:5px;
+	
+	margin-top:60px;
+	margin-right:10px;
+}

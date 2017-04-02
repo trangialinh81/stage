@@ -1,0 +1,19 @@
+
+<html>
+<body>
+	<select id="ListeElement" onchange="VerifListe();"> 
+	   <option value="valeur1">Option 1</option> 
+	   <option value="valeur2">Option 2</option> 
+	   <option value="valeur3">Option 3</option> 
+	</select> 
+
+	<script type="text/javascript"> 
+	   var ObjListe = document.getElementById('ListeElement'); 
+	   var SelIndex = ObjListe.selectedIndex; 
+	   var SelValue = ObjListe.options[ObjListe.selectedIndex].value; 
+	   var SelText = ObjListe.options[ObjListe.selectedIndex].text; 
+	   
+	   document.write (SelValue);
+	</script> 
+</body>
+</html>

@@ -1,0 +1,153 @@
+<?xml version="1.0"?>     
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<!--<img src="logoParis5.jpg" border="0" align="right" width=20% height=20%></img>-->
+		<meta charset="UTF-8" /><title> Page de Calibration </title>
+	    <link rel = "stylesheet" type = "text/css" href = "./css/style.css" />
+   </head>
+   
+   <body>
+	<section>
+		<h2 align="center" class="couleur"><em>Page de Calibration </em></h2>
+		<div id="menu_horizontal" >
+		<ul id="menu">
+			<li> <a href="index.html">Accueil</a> </li>
+			<li> <a href="#"> Calibration </a> </li>
+			<li> <a href="#">Carte de Chaleur</a> </li>
+			<li> <a href="#">Histogramme</a> </li>
+		</ul>
+		</div>
+		
+		<div id="planMusee">
+		Plan du musée
+		<br/>
+		<br/>
+
+		<form name="pointform2">
+			<img src="point.png" id="photo1" style="width:2%;height:2%;position:relative;visibility:hidden;">
+			<img src="point_2.png" id="photo12" style="width:2%;height:2%;position:relative;visibility:hidden;">
+			<img src="point_3.png" id="photo13" style="width:2%;height:2%;position:relative;visibility:hidden;">
+			<img src="point_4.png" id="photo14" style="width:2%;height:2%;position:relative;visibility:hidden;">
+			<iframe id="imgSVG"  src="Caen-plan-pas-simple2.svg" width="640px"; height="480px"></iframe>
+			<script>
+				var a = document.getElementById("imgSVG");
+				//it's important to add an load event listener to the object, as it will load the svg doc asynchronously
+				a.addEventListener("load",function(){
+				var svgDoc = a.contentDocument; //get the inner DOM of alpha.svg
+				var delta = svgDoc.getElementById("svg2"); //get the inner element by id
+				delta.addEventListener("dblclick",
+				function(evt){
+						
+				alert(evt.clientX + ' ' + evt.clientY);
+				//pos_x = evt.offsetX?(evt.offsetX):evt.pageX-document.getElementById("imgSVG").offsetLeft;
+				//pos_y = evt.offsetY?(evt.offsetY):evt.pageY-document.getElementById("imgSVG").offsetTop;
+				//alert(pos_x + ' ' + pos_y);
+				}
+				,false);    //add behaviour
+				},false);
+			</script>
+			
+			
+			<TABLE BORDER="2"> 	
+
+			<CAPTION> Les 4 points a cocher</CAPTION> 
+				<TR> 
+					<Td > Point </Td> 
+					<Td align="center"> X </Td> 
+					<Td align="center"> Y </Td>
+				</TR> 
+				<TR> 
+					<Td> 1er </Td> <ul><input type="button" value="Annuler" style="float:right;margin-right:1200px;margin-top:50px;width:100px;" onclick="relance()"></ul>
+					<TD> <input type="text" name="form5_x" size="5" /> </TD> 
+					<TD> <input type="text" name="form5_y" size="5" /> </TD> 
+				</TR>
+	
+				<TR> 
+					<Td> 2er </TD>  <ul><input type="button" value="Annuler" style="float:right;margin-right:1200px;margin-top:5px;width:100px;" onclick="relance()"></ul>
+					<TD> <input type="text" name="form6_x" size="5" /> </TD> 
+					<TD> <input type="text" name="form6_y" size="5" /> </TD> 
+				</TR>
+					<Td> 3er </Td> <ul><input type="button" value="Annuler" style="float:right;margin-right:1200px;margin-top:5px;width:100px;" onclick="relance()"></ul>
+					<TD> <input type="text" name="form7_x" size="5" /> </TD> 
+					<TD> <input type="text" name="form7_y" size="5" /> </TD> 
+				</TR>
+				<TR> 
+					<Td> 4er </Td>  <ul><input type="button" value="Annuler" style="float:right;margin-right:1200px;margin-top:5px;width:100px;" onclick="relance()"></ul>
+					<TD> <input type="text" name="form8_x" size="5" /> </TD> 
+					<TD> <input type="text" name="form8_y" size="5" /> </TD> 
+				</TR>
+			</TABLE>
+			
+		</form>
+		</div>
+
+		<script src="points_linh.js"></script>
+		<div id="imgCapteur">
+			Choisissez un capteur:
+
+			<FORM METHOD="POST">
+				<SELECT style="margin-top:10px; margin-bottom:10px;width: 150px" name="ListeElement"  onchange="change(this.value)" size="1">	
+					<OPTION>Capteur #3
+					<OPTION value="image145.bmp">Capteur #145
+					<OPTION value="musse.png">Capteur #2
+					<OPTION>Capteur #4
+					<OPTION>Capteur #5
+				</SELECT>
+			</FORM>
+	
+			<form name="pointform">
+				<div id="pointer_div" onclick="point_it(event)" style = "background-image:url('musse.png');width:640px;height:480px;background-position:center;">
+					<img src="point.png" id="photo" style="width:2%;height:2%;position:relative;visibility:hidden;">
+					<img src="point_2.png" id="photo2" style="width:2%;height:2%;position:relative;visibility:hidden;">
+					<img src="point_3.png" id="photo3" style="width:2%;height:2%;position:relative;visibility:hidden;">
+					<img src="point_4.png" id="photo4" style="width:2%;height:2%;position:relative;visibility:hidden;">
+				</div>
+				<TABLE BORDER="2"><CAPTION> Les 4 points a cocher</CAPTION> 
+					<TR> 
+						<Td> Point </Td> 
+						<Td align="center"> U </Td> 
+						<Td align="center"> V </Td>
+					</TR> 
+					<TR> 
+						<Td> 1er </Td> <ul><input type="button" value="Annuler" style="float:right;margin-right:300px;margin-top:50px;width:100px;" onclick="annuler('1')"> </ul>
+						<TD> <input type="text" name="form1_x" size="5" /> </TD> 
+						<TD> <input type="text" name="form1_y" size="5" /> </TD> 
+					</TR>
+					<TR> 
+						<Td> 2er </TD> 
+						<TD> <input type="text" name="form2_x" size="5" /> </TD> 
+						<TD> <input type="text" name="form2_y" size="5" /> </TD> 
+						<ul><input type="button" value="Annuler" style="float:right;margin-right:300px;margin-top:5px;width:100px;" onclick="annuler('2')"> </ul>
+					</TR>
+					<TR>
+						<Td> 3er </Td> <ul><input type="button" value="Annuler" style="float:right;margin-right:300px;margin-top:5px;width:100px;" onclick="annuler('3')"> </ul>
+						<TD> <input type="text" name="form3_x" size="5" /> </TD> 
+						<TD> <input type="text" name="form3_y" size="5" /> </TD> 
+					</TR>
+					<TR> 
+						<Td> 4er </Td> <ul><input type="button" value="Annuler" style="float:right;margin-right:300px;margin-top:5px;width:100px;" onclick="annuler('4')"> </ul>
+						<TD> <input type="text" name="form4_x" size="5" /> </TD> 
+						<TD> <input type="text" name="form4_y" size="5" /> </TD> 
+					</TR>
+				</TABLE>
+			
+				<INPUT type="button" style="float:centre;margin-top:50px;width:100px;hight:50px" name="nom" value= "Validation"
+					onclick="alert('Test réussi !')">
+				<input type="button" value="relance" style="float:right;margin-right:300px;margin-top:50px;width:100px;" onclick="relance()">
+			</form> 
+		</div>
+
+	</section>
+	<footer>
+		<div id="footer">
+			<p>
+				Copyright Mai 2013 tous droits réservés <br />
+				Medjebeur Nabila/ Rachi Malik / Kanita Nada / Tran Hoai Linh / Nguyen Thi Phuong Mai - Projet Tuteuré <br />
+			</p>
+		</div>
+	</footer>
+
+	</body>
+
+</html>

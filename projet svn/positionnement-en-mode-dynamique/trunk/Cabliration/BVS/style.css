@@ -1,0 +1,121 @@
+body
+{
+	
+	width: 960px; 
+	margin: auto; /* Pour centrer notre page */
+	margin-top: 20px; /* Pour éviter de coller avec le haut de la fenêtre du navigateur. Essayez d'enlever pour voir ! */
+	margin-bottom: 20px;    /* Idem pour le bas du navigateur */
+	border-radius: 10px 10px 10px 10px;
+	background-color:#1DDCE8;
+	border-width: 5px; /* epaisseur de la bordure du  body */
+	border-style: solid;
+	border-color:#242424;
+	
+}
+
+#head{
+margin-top: 8px; 
+margin-left: 15px;
+height: 4px;
+width: 7px;
+
+border-left-width: 0px;
+color: blue;
+}
+
+
+#menu_horizontal, #menu_horizontal ul /* Liste  Accueil Calibration Carte de chaleur histogramme VERTICAL */     
+{
+	padding : 0; /* pas de marge intérieure */
+	margin : 0; /* ni extérieure */
+	list-style : none; /* on supprime le style par défaut de la liste */
+	line-height : 21px; /* on définit une HAutEUR pour chaque élément */
+	text-align : center; /* on centre le texte qui se trouve dans la liste */
+}
+
+#menu_horizontal /* Ensemble du menu */
+{
+	position:absolute;
+	font-weight : bold; /* on met le texte en gras */
+	font-family : Arial; /* on utilise Arial, c'est plus beau ^^ */
+	font-size : 12px; /* hauteur du texte : 12 pixels */
+	margin-left:250px;
+	margin-top: 5px;
+}
+
+#menu_horizontal a /* Contenu des listes */
+{
+	display : block; /* on change le type d'élément, les liens deviennent des balises de type block */
+	padding : 0; /* aucune marge intérieure */
+	background :-webkit-linear-gradient(rgba(22,127,193,0.79) 13.91%, #ffffff 100%); /* couleur de fond */        
+	color : #fff; /* couleur du texte */
+	text-decoration : none; /* on supprime le style par défaut des liens (la plupart du temps = souligné) */
+	width : 144px; /* largeur */
+}
+
+#menu_horizontal li /* Elements des listes */      
+{ 
+        float : left; 
+        /* pour IE qui ne reconnaît pas "transparent" */
+        border-right : 1px solid #fff; /* on met une bordure blanche à droite de chaque élément */
+}
+
+/* IE ne reconnaissant pas le sélecteur ">" */
+html>body #menu_horizontal li
+{
+        border-right: 1px solid transparent ; /* on met une bordure transparente à droite de chaque élément */
+}
+
+.lettre{
+	color:white;
+}
+
+.couleur{
+		margin-top: 30px;
+		border-color:black;
+		color: #cff2f2;
+		margin-left: 10px;
+		width:940px;
+		background-color: #6300ff
+	}
+#corps
+{
+width: 835px;
+height:850px;
+   text-align: justify;
+   font-size: 16px;
+   font-family: "Comic Sans MS";
+   text-shadow: 0px 0px;
+   margin-top:48px;
+   margin-left: 10px; /* Une marge à gauche pour pousser le corps, afin qu'il ne passe plus sous le menu */
+   margin-right:5px; 
+   margin-bottom: 20px; /* Ca c'est pour éviter que le corps colle trop au pied de page en-dessous */
+   padding: 5px; /* Pour éviter que le texte à l'intérieur du corps ne colle trop à la bordure */
+padding-right: 50px;
+padding-left: 50px;
+   color: #003430;
+	/* Une couleur de fond pour le corps */
+
+
+   
+   border: 3px solid #bfbfbf; /* Une bordure pour bien marquer les limites du corps et pour faire joli */
+}
+
+#footer
+
+{
+	background-position: 1px;
+	text-align: center;
+	color: black;
+	border-radius:10px 10px 10px 10px;
+
+	width:930px;
+   	clear: both;
+   	padding :5px;
+	border: 2px solid #7c7c7c;
+	margin:5px;
+	
+	margin-top:60px;
+	
+	margin-right:10px;
+}

@@ -1,0 +1,39 @@
+Projet Inspot 2 :
+
+Liste des tâches dans la phrase de développement :
+
+I. Base de donnees :
+1.	Modélisation.  						ok(group)
+2.	Etudes, Choix et Installation du SGBD: mysql(WAMP). 	ok(linh)
+3.	Création des tables. 					ok(linh)
+4.	Test de la BD. 						ok(linh)
+
+II. Parsing des fichiers log provenants des capteurs. 
+1.	Etudes des langages de programmation utilisants. 			ok(linh)
+2.	Choix d'1 langage adaptable. 						ok(linh)	
+3.	Installation de ce compilateur (visual studio 2008)  			ok(linh)
+4.	Programmation								ok(linh)
+	- Parsing des fichier log						
+	- Connection à la BD (bibliotheque libmysql http://dev.mysql.com/downloads/connector/c/) 
+	_ Requête «Insert les donnees de fichier dans la table DonneBrute ». 	
+5.	Test. 									ok(linh)
+
+III.	Page de calibration. 
+1.	Etudes des éditeurs web. 
+2.	Choix d'1 éditeur. 
+3.	Installation de ce éditeur (si nécessaire). 
+4.	Création d'une interface web. 
+-	Visualisation de plan du musée. 
+-	Visualisation de l'image de la salle choisie dans un ensemble de salles. 
+
+-	Les requêtes d'utilisateur en PHP ou en autre langage approprié. 
+5.	Récupérer les résultats de requêtes, calculer et stocker les données dans la table Capteur. 
+
+6.	Traitement référentiel et élimination de double pour la table de Données Exploitable. 
+
+7.	Test. 
+
+
+
+VI. Intégration.
+1.Test de chaque sous-ensemble d'application s'interface correctement avec les autres.

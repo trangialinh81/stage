@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/5/trunk/Parsing%20des%20fichiers%20log/src
+END
+FichierLog.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/5/trunk/Parsing%20des%20fichiers%20log/src/FichierLog.h
+END
+main.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/5/trunk/Parsing%20des%20fichiers%20log/src/main.cpp
+END
+trame.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/5/trunk/Parsing%20des%20fichiers%20log/src/trame.cpp
+END
+FichierLog.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/5/trunk/Parsing%20des%20fichiers%20log/src/FichierLog.cpp
+END
+trame.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/5/trunk/Parsing%20des%20fichiers%20log/src/trame.h
+END

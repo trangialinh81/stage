@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/5/trunk/Parsing%20des%20fichiers%20log/lib
+END
+libmysql.dll
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/5/trunk/Parsing%20des%20fichiers%20log/lib/libmysql.dll
+END
+mysqlclient.lib
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/5/trunk/Parsing%20des%20fichiers%20log/lib/mysqlclient.lib
+END
+libmysql.lib
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/5/trunk/Parsing%20des%20fichiers%20log/lib/libmysql.lib
+END
